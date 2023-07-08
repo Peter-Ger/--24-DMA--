@@ -1,38 +1,30 @@
-ÊµÑéÆ÷²Ä:
-	°¢²¨ÂÞSTM32H7¿ª·¢°å
+å®žéªŒå™¨æ:
+	é˜¿æ³¢ç½—STM32H7å¼€å‘æ¿
 	
-ÊµÑéÄ¿µÄ:
-	Ñ§Ï°STM32 DMA¹¦ÄÜµÄÊ¹ÓÃ
+å®žéªŒç›®çš„:
+	å­¦ä¹ STM32 DMAåŠŸèƒ½çš„ä½¿ç”¨
 	
-Ó²¼þ×ÊÔ´:
-	1,DS0(Á¬½ÓÔÚPB1) 
-	2,´®¿Ú1(²¨ÌØÂÊ:115200,PA9/PA10Á¬½ÓÔÚ°åÔØUSB×ª´®¿ÚÐ¾Æ¬CH340ÉÏÃæ) 
-	3,ALIENTEK 2.8/3.5/4.3/7´çLCDÄ£¿é(°üÀ¨MCUÆÁºÍRGBÆÁ,¶¼Ö§³Ö) 
-	4,°´¼üKEY0(PH3)
-	5,DMA(DMA2Êý¾ÝÁ÷7Í¨µÀ4) 
+ç¡¬ä»¶èµ„æº:
+	1,DS0(è¿žæŽ¥åœ¨PB1) 
+	2,ä¸²å£1(æ³¢ç‰¹çŽ‡:115200,PA9/PA10è¿žæŽ¥åœ¨æ¿è½½USBè½¬ä¸²å£èŠ¯ç‰‡CH340ä¸Šé¢) 
+	3,ALIENTEK 2.8/3.5/4.3/7å¯¸LCDæ¨¡å—(åŒ…æ‹¬MCUå±å’ŒRGBå±,éƒ½æ”¯æŒ) 
+	4,æŒ‰é”®KEY0(PH3)
+	5,DMA(DMA2æ•°æ®æµ7é€šé“4) 
 	
-ÊµÑéÏÖÏó:
-	±¾ÊµÑéÍ¨¹ý°´¼üKEY0¿ØÖÆ´®¿Ú1ÒÔDMA·½Ê½·¢ËÍÊý¾Ý£¬°´ÏÂKEY0£¬¾Í¿ªÊ¼DMA´«ËÍ£¬Í¬Ê±ÔÚLCDÉÏÃæÏÔÊ¾´«ËÍ½ø¶È¡£
-	´ò¿ª´®¿Úµ÷ÊÔÖúÊÖ£¬¿ÉÒÔÊÕµ½DMA·¢ËÍµÄÄÚÈÝ¡£ 
+å®žéªŒçŽ°è±¡:
+	æœ¬å®žéªŒé€šè¿‡æŒ‰é”®KEY0æŽ§åˆ¶ä¸²å£1ä»¥DMAæ–¹å¼å‘é€æ•°æ®ï¼ŒæŒ‰ä¸‹KEY0ï¼Œå°±å¼€å§‹DMAä¼ é€ï¼ŒåŒæ—¶åœ¨LCDä¸Šé¢æ˜¾ç¤ºä¼ é€è¿›åº¦ã€‚
+	æ‰“å¼€ä¸²å£è°ƒè¯•åŠ©æ‰‹ï¼Œå¯ä»¥æ”¶åˆ°DMAå‘é€çš„å†…å®¹ã€‚ 
 	
-×¢ÒâÊÂÏî:
-	1,4.3´çºÍ7´çÆÁÐèÒª±È½Ï´óµçÁ÷,USB¹©µç¿ÉÄÜ²»×ã,ÇëÓÃÍâ²¿µçÔ´ÊÊÅäÆ÷(ÍÆ¼öÍâ½Ó12V 1AµçÔ´).
-	2,±¾Àý³ÌÔÚLCD_Initº¯ÊýÀïÃæ(ÔÚlcd.c),ÓÃµ½ÁËprintf,Èç¹û²»³õÊ¼»¯´®¿Ú1,½«µ¼ÖÂÒº¾§ÎÞ·¨ÏÔÊ¾!!  
-	3,µçÄÔ¶Ë´®¿Úµ÷ÊÔÖúÊÖ²¨ÌØÂÊ±ØÐëÊÇ115200.
-	4,ÇëÊ¹ÓÃXCOM/SSCOM´®¿Úµ÷ÊÔÖúÊÖ,ÆäËû´®¿ÚÖúÊÖ¿ÉÄÜ¿ØÖÆDTR/RTSµ¼ÖÂMCU¸´Î»/³ÌÐò²»ÔËÐÐ 
-	5,ÇëÓÃUSBÏßÁ¬½ÓÔÚUSB_232,ÕÒµ½USB×ª´®¿Úºó²âÊÔ±¾Àý³Ì.
-	6,P4µÄPA9/PA10±ØÐëÍ¨¹ýÌøÏßÃ±Á¬½ÓÔÚRXD/TXDÉÏ.
+æ³¨æ„äº‹é¡¹:
+	1,4.3å¯¸å’Œ7å¯¸å±éœ€è¦æ¯”è¾ƒå¤§ç”µæµ,USBä¾›ç”µå¯èƒ½ä¸è¶³,è¯·ç”¨å¤–éƒ¨ç”µæºé€‚é…å™¨(æŽ¨èå¤–æŽ¥12V 1Aç”µæº).
+	2,æœ¬ä¾‹ç¨‹åœ¨LCD_Initå‡½æ•°é‡Œé¢(åœ¨lcd.c),ç”¨åˆ°äº†printf,å¦‚æžœä¸åˆå§‹åŒ–ä¸²å£1,å°†å¯¼è‡´æ¶²æ™¶æ— æ³•æ˜¾ç¤º!!  
+	3,ç”µè„‘ç«¯ä¸²å£è°ƒè¯•åŠ©æ‰‹æ³¢ç‰¹çŽ‡å¿…é¡»æ˜¯115200.
+	4,è¯·ä½¿ç”¨XCOM/SSCOMä¸²å£è°ƒè¯•åŠ©æ‰‹,å…¶ä»–ä¸²å£åŠ©æ‰‹å¯èƒ½æŽ§åˆ¶DTR/RTSå¯¼è‡´MCUå¤ä½/ç¨‹åºä¸è¿è¡Œ 
+	5,è¯·ç”¨USBçº¿è¿žæŽ¥åœ¨USB_232,æ‰¾åˆ°USBè½¬ä¸²å£åŽæµ‹è¯•æœ¬ä¾‹ç¨‹.
+	6,P4çš„PA9/PA10å¿…é¡»é€šè¿‡è·³çº¿å¸½è¿žæŽ¥åœ¨RXD/TXDä¸Š.
 	  
 	 
-					ÕýµãÔ­×Ó@ALIENTEK
-					2018-6-13
-					¹ãÖÝÊÐÐÇÒíµç×Ó¿Æ¼¼ÓÐÏÞ¹«Ë¾
-					µç»°£º020-38271790
-					´«Õæ£º020-36773971
-					¹ºÂò£ºhttp://shop62103354.taobao.com
-					http://shop62057469.taobao.com
-					¹«Ë¾ÍøÕ¾£ºwww.alientek.com
-					¼¼ÊõÂÛÌ³£ºwww.openedv.com
+
 
 
 
